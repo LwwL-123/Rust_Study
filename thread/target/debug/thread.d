@@ -1,1 +1,0 @@
-/Users/lzw/Study/Rust_Study/thread/target/debug/thread: /Users/lzw/Study/Rust_Study/thread/src/main.rs /Users/lzw/Study/Rust_Study/thread/src/my_mutex.rs /Users/lzw/Study/Rust_Study/thread/src/my_thread.rs
