@@ -49,8 +49,11 @@ fn main() {
     let mut map = HashMap::new();
     map.insert(String::from("lzw"),10);
     map.insert(String::from("lzww"),100);
-
+    map.entry(String::from("lzww")).or_insert(1000);
+    map.entry(String::from("lzwww")).or_insert(1000);
     let value = map.get("lzw");
+
+    println!("{:?}", map);
     println!("{:?}", value.unwrap());
 
 
