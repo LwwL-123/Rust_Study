@@ -1,4 +1,5 @@
 use std::collections::HashMap;
+
 fn main() {
 
     // ///结构体
@@ -44,23 +45,37 @@ fn main() {
     //     Err(s) => print!("{}",s)
     // }
 
+    let res = 5;
+    let mut vec = vec![5];
 
-    ///hashmap
-    let mut map = HashMap::new();
-    map.insert(String::from("lzw"),10);
-    map.insert(String::from("lzww"),100);
-    map.entry(String::from("lzww")).or_insert(1000);
-    map.entry(String::from("lzwww")).or_insert(1000);
-    let value = map.get("lzw");
+    let r = vec.clone().into_iter().filter(|x|{
+        if x == &res {
+            false
+        }else {
+            true
+        }
+    }).collect::<Vec<i32>>();
 
-    println!("{:?}", map);
-    println!("{:?}", value.unwrap());
+
+    for i in r {
+        println!("{:?}",i);
+    }
+
+
+
+
+    // ///hashmap
+    // let mut map = HashMap::new();
+    // map.insert(String::from("lzw"),10);
+    // map.insert(String::from("lzww"),100);
+    // map.entry(String::from("lzww")).or_insert(1000);
+    // map.entry(String::from("lzwww")).or_insert(1000);
+    // let value = map.get("lzw");
+    //
+    // println!("{:?}", map);
+    // println!("{:?}", value.unwrap());
 
 
 }
 
-#[test]
-fn test1(){
-    let a = 1;
-    assert_eq!(a,1)
-}
+
